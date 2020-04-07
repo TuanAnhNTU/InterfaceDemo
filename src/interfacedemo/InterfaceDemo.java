@@ -5,6 +5,11 @@
  */
 package interfacedemo;
 
+import calculates.CasioCalculate;
+import interfaces.ICalculate;
+
+
+
 /**
  *
  * @author asus
@@ -19,6 +24,8 @@ public class InterfaceDemo
     {
         // TODO code application logic here
         System.out.println("Hello Interface Demo");
+        ICalculate calculator = new CasioCalculate();
+        System.out.println("4 + 5 = " + calculator.cong(4, 5));
     }
     
 }
